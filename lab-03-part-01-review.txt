@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-/root
+cd ~
 
 
 ==========
@@ -37,7 +37,6 @@ ls
 ==========
 4. If there are directories or files in your home directory that have the word mtec1003 in them, list them below (otherwise skip this step):
 ----------
-mtec1003
 
 
 ==========
@@ -59,7 +58,7 @@ $ rm -rf mtec1003-labs-02
 
 http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/03/mtec1003-lab-03.tar.gz
 
-Download this file to your home directory into a file called mtec1003-lab-03.tar.gz   
+Download this file to your home directory into a file called  mtec1003-lab-03.tar.gz   
 
 Use a command that we learned to do this.
 
@@ -67,7 +66,7 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
-
+curl -o mtec1003-lab-03.tar.gz http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/03/mtec1003-lab-03.tar.gz
 
 
 ==========
@@ -75,7 +74,7 @@ Write the command(s) that you used to download this file - as well as its output
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+tar -xvf mtec1003-lab-03.tar.gz
 
 
 ==========
@@ -90,6 +89,11 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+ls 
+
+Applications		Downloads		Music			mtec1002		mtec1003-lab-03		stuff
+Desktop			Library			Pictures		mtec1002-lab-02		mtec1003-lab-03.tar.gz
+Documents		Movies			Public			mtec1002-lab-02.zip	my-stuff
 
 
 
@@ -99,7 +103,7 @@ Write the command(s) that you used to do this - as well as its output - below:
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
 
-
+books	logs	web
 
 ==========
 10.  Now... go back home.  Then change to the science-fiction directory using a relative path.  The directory is located in books... which is located in the mtec1003-lab-03 directory.  Verify you're in the right directory using pwd.
@@ -107,14 +111,15 @@ Write the command(s) that you used to determine this - as well as its output - b
 Write the command(s) (including going home) that you used to do this below:
 ----------
 
-
+cd mtec1003-lab-03/books/science-fiction
 
 ==========
 11.  Write the files that are in the science fiction directory below.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+ls 
+pg84.txt	pg86.txt
 
 
 ==========
