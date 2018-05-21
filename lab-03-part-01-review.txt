@@ -133,7 +133,7 @@ Write the command(s) that you used to do this below:
 
 Write the command(s) that you used to do this below:
 ----------
-
+cd mtec1003-lab-03
 ==========
 14. Find out what the most recently modified directory is in mtec1003 (there are only 3 to choose from)?  How would you find this out?  Hint: perhaps using something to show the modified date... and sort it by time.
 
