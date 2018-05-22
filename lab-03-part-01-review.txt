@@ -145,3 +145,5 @@ Write the command(s) that you used to do this below:
 
 Write the command(s) that you used to do this below:
 ----------
+tar -cvf logs.tar logs
+gzip logs.tar
