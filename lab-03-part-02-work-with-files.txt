@@ -53,7 +53,7 @@ $ touch bar.txt
 Copy and paste the output below.
 ----------
 
-
+bar.txt	foo.txt
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
@@ -62,21 +62,25 @@ Copy and paste the output below.
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
-
+cp bar.txt baz.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+
+rm bar.txt
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
+mv foo.txt qux.txt
 
-
+baz.txt	qux.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1003-lab-03.
@@ -90,7 +94,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+rmdir My_Files
+rmdir: My_Files: Directory not empty
 
 
 ==========
@@ -120,7 +125,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+it shows the book called "The Prince"
 
 
 ==========
@@ -133,7 +138,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
+head pg1232.txt
 
+Title: The Prince
 
 ==========
 18. Using the same file again!
@@ -144,8 +151,9 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below.
 ----------
+tail pg1232.txt
 
-
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -156,6 +164,7 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+we can keep scrolling down like a never ending loop
 
 
 
@@ -164,22 +173,25 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+if the file is too long and you just want to look at the begining or end you can use less or more
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+52639
+wc -w pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
-
+5063
+wc -l pg1232.txt
 
 ==========
 23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
 
 Write the command that you used below.
 ----------
+cp *.txt Guest
